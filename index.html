@@ -1,24 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shreya Dhamankar - IT Engineering Student Resume</title>
-    <meta name="description" content="Professional resume of Shreya Dhamankar, IT Engineering undergraduate with expertise in AI, web development, and data analysis" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Dhamankar - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .resume-container {
+            max-width: 800px;
+        }
+        .section-title {
+            position: relative;
+            padding-left: 15px;
+        }
+        .section-title:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: 70%;
+            width: 4px;
+            background-color: #0d9488;
+        }
+        .certificate-box {
+            transition: all 0.3s ease;
+        }
+        .certificate-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .project-box {
+            transition: all 0.3s ease;
+        }
+        .project-box:hover {
+            box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.1), 0 2px 4px -1px rgba(5, 150, 105, 0.06);
+        }
+        @media print {
+            body {
+                zoom: 0.9;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+    <div class="container mx-auto resume-container my-8 bg-white shadow-lg rounded-lg overflow-hidden">
+        <!-- Header Section -->
+        <div class="bg-teal-600 text-white p-6">
+            <h1 class="text-3xl font-bold">Shreya Dhamankar</h1>
+            <p class="text-teal-100 mt-1">IT Engineering Student | AI & Web Enthusiast</p>
+            <div class="flex flex-wrap gap-4 mt-4 text-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span class="editable" data-field="phone">+91 XXXXX XXXXX</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span class="editable" data-field="email">shreya.d@example.com</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span class="editable" data-field="location">Pune, India</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin mr-2"></i>
+                    <span class="editable" data-field="linkedin">linkedin.com/in/shreya-d</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-github mr-2"></i>
+                    <span class="editable" data-field="github">github.com/shreya-d</span>
+                </div>
+            </div>
+        </div>
 
-    <meta property="og:title" content="9cba1e93-5b23-4e4d-9972-d01065e44c75" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        <!-- Main Content -->
+        <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Left Column -->
+            <div class="md:col-span-2 space-y-6">
+                <!-- Career Objective -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Career Objective</h2>
+                    <p class="mt-2 text-gray-600 leading-relaxed">
+                        IT Engineering undergraduate with hands-on experience in AI, data analysis, and web development. 
+                        Known for combining technical precision with creative problem-solving to deliver impactful digital 
+                        solutions. Seeking opportunities to contribute innovative ideas and strong teamwork skills to 
+                        high-impact projects.
+                    </p>
+                </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+                <!-- Education -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Education</h2>
+                    <div class="mt-3 overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-teal-50 text-teal-700">
+                                    <th class="p-2 text-left border border-teal-100">Degree</th>
+                                    <th class="p-2 text-left border border-teal-100">Institution</th>
+                                    <th class="p-2 text-left border border-teal-100">Duration</th>
+                                    <th class="p-2 text-left border border-teal-100">CGPA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-2 border border-teal-100">B.Tech in IT</td>
+                                    <td class="p-2 border border-teal-100">XYZ College of Engineering</td>
+                                    <td class="p-2 border border-teal-100">2020 - 2024</td>
+                                    <td class="p-2 border border-teal-100">8.9/10</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2 border border-teal-100">HSC (12th Grade)</td>
+                                    <td class="p-2 border border-teal-100">ABC Junior College</td>
+                                    <td class="p-2 border border-teal-100">2018 - 2020</td>
+                                    <td class="p-2 border border-teal-100">92%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <!-- Projects -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Projects</h2>
+                    <div class="mt-3 space-y-4" id="projects-container">
+                        <!-- Project 1 -->
+                        <div class="project-box p-4 border border-teal-100 rounded-lg bg-white">
+                            <h3 class="font-semibold text-teal-800">Sentiment Analysis AI</h3>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Developed using Hugging Face Transformers; deployed on GitHub; designed frontend in HTML/CSS; 
+                                collaborated in a team of 3.
+                            </p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Python</span>
+                                <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Hugging Face</span>
+                                <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">HTML/CSS</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="project-box p-4 border border-teal-100 rounded-lg bg-white">
+                            <h3 class="font-semibold text-teal-800">College Parking Optimization Model</h3>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Designed a sustainable solution for efficient parking space usage, integrated EV charging points, 
+                                and enhanced security measures.
+                            </p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Python</span>
+                                <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Data Analysis</span>
+                                <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">System Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="addProject()" class="no-print mt-3 px-3 py-1 bg-teal-600 text-white text-sm rounded hover:bg-teal-700 transition">
+                        <i class="fas fa-plus mr-1"></i> Add Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+                <!-- Skills -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Skills</h2>
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>C/C++</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>Hugging Face</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>Leadership</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>Problem-solving</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-circle text-teal-500 text-xs mr-2"></i>
+                            <span>Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Certifications</h2>
+                    <div class="mt-3 space-y-3" id="certifications-container">
+                        <!-- Certificate 1 -->
+                        <div class="certificate-box p-3 border border-teal-100 rounded-lg bg-white flex items-start">
+                            <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded mr-3">
+                                <i class="fas fa-certificate text-teal-500 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-teal-800">Python Essentials (Cisco)</h3>
+                                <p class="text-xs text-gray-500 mt-1">Issued: June 2022</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Certificate 2 -->
+                        <div class="certificate-box p-3 border border-teal-100 rounded-lg bg-white flex items-start">
+                            <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded mr-3">
+                                <i class="fas fa-certificate text-teal-500 text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-teal-800">SQL Certification</h3>
+                                <p class="text-xs text-gray-500 mt-1">Issued: March 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="addCertificate()" class="no-print mt-3 px-3 py-1 bg-teal-600 text-white text-sm rounded hover:bg-teal-700 transition">
+                        <i class="fas fa-plus mr-1"></i> Add Certification
+                    </button>
+                </div>
+
+                <!-- Achievements -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Achievements</h2>
+                    <ul class="mt-3 space-y-2 list-disc list-inside text-sm">
+                        <li>Led a team of 5 in developing an award-winning college project</li>
+                        <li>1st place in inter-college technical paper presentation</li>
+                        <li>National level classical dance competition winner</li>
+                    </ul>
+                </div>
+
+                <!-- Extracurricular -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Extracurricular</h2>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Classical Dance</span>
+                        <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Drawing</span>
+                        <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Poetry</span>
+                        <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded">Creative Writing</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h2 class="text-xl font-semibold text-teal-700 section-title">Languages</h2>
+                    <div class="mt-3 space-y-2">
+                        <div>
+                            <span class="font-medium">English</span>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mt-1">
+                                <div class="bg-teal-600 h-1.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-medium">Hindi</span>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mt-1">
+                                <div class="bg-teal-600 h-1.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-medium">Marathi</span>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mt-1">
+                                <div class="bg-teal-600 h-1.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-medium">German</span>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mt-1">
+                                <div class="bg-teal-600 h-1.5 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="no-print p-6 text-center">
+            <button onclick="window.print()" class="px-4 py-2 bg-teal-600 text-white rounded hover:bg-teal-700 transition">
+                <i class="fas fa-print mr-2"></i> Print/Save as PDF
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Function to add new project
+        function addProject() {
+            const container = document.getElementById('projects-container');
+            const newProject = document.createElement('div');
+            newProject.className = 'project-box p-4 border border-teal-100 rounded-lg bg-white';
+            newProject.innerHTML = `
+                <div class="flex justify-between items-start">
+                    <h3 class="font-semibold text-teal-800 editable" contenteditable="true">Project Title</h3>
+                    <button onclick="this.parentElement.parentElement.remove()" class="text-red-400 hover:text-red-600">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <p class="text-sm text-gray-600 mt-1 editable" contenteditable="true">Project description goes here...</p>
+                <div class="mt-2 flex flex-wrap gap-2" contenteditable="false">
+                    <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded editable" contenteditable="true">Tech 1</span>
+                    <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded editable" contenteditable="true">Tech 2</span>
+                    <span class="px-2 py-1 bg-teal-50 text-teal-700 text-xs rounded editable" contenteditable="true">Tech 3</span>
+                </div>
+            `;
+            container.appendChild(newProject);
+        }
+
+        // Function to add new certificate
+        function addCertificate() {
+            const container = document.getElementById('certifications-container');
+            const newCert = document.createElement('div');
+            newCert.className = 'certificate-box p-3 border border-teal-100 rounded-lg bg-white flex items-start';
+            newCert.innerHTML = `
+                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center rounded mr-3">
+                    <i class="fas fa-certificate text-teal-500 text-2xl"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-medium text-teal-800 editable" contenteditable="true">Certificate Name</h3>
+                        <button onclick="this.parentElement.parentElement.parentElement.remove()" class="text-red-400 hover:text-red-600">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1 editable" contenteditable="true">Issued: Month Year</p>
+                </div>
+            `;
+            container.appendChild(newCert);
+        }
+
+        // Make all fields with class "editable" content editable
+        document.querySelectorAll('.editable').forEach(element => {
+            element.setAttribute('contenteditable', 'true');
+        });
+    </script>
+</body>
 </html>
